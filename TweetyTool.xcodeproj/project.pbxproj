@@ -1,0 +1,526 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F85E36F01E5B772A00D5CF98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85E36EF1E5B772A00D5CF98 /* AppDelegate.swift */; };
+		F85E36F21E5B772A00D5CF98 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85E36F11E5B772A00D5CF98 /* ViewController.swift */; };
+		F85E36F51E5B772A00D5CF98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F85E36F31E5B772A00D5CF98 /* Main.storyboard */; };
+		F85E36F71E5B772A00D5CF98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F85E36F61E5B772A00D5CF98 /* Assets.xcassets */; };
+		F85E36FA1E5B772A00D5CF98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F85E36F81E5B772A00D5CF98 /* LaunchScreen.storyboard */; };
+		F85E37051E5B772A00D5CF98 /* TweetyToolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85E37041E5B772A00D5CF98 /* TweetyToolTests.swift */; };
+		F85E37101E5B772A00D5CF98 /* TweetyToolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85E370F1E5B772A00D5CF98 /* TweetyToolUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F85E37011E5B772A00D5CF98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F85E36E41E5B772A00D5CF98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F85E36EB1E5B772A00D5CF98;
+			remoteInfo = TweetyTool;
+		};
+		F85E370C1E5B772A00D5CF98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F85E36E41E5B772A00D5CF98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F85E36EB1E5B772A00D5CF98;
+			remoteInfo = TweetyTool;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F85E36EC1E5B772A00D5CF98 /* TweetyTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TweetyTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F85E36EF1E5B772A00D5CF98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F85E36F11E5B772A00D5CF98 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F85E36F41E5B772A00D5CF98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F85E36F61E5B772A00D5CF98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F85E36F91E5B772A00D5CF98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F85E36FB1E5B772A00D5CF98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F85E37001E5B772A00D5CF98 /* TweetyToolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TweetyToolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F85E37041E5B772A00D5CF98 /* TweetyToolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetyToolTests.swift; sourceTree = "<group>"; };
+		F85E37061E5B772A00D5CF98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F85E370B1E5B772A00D5CF98 /* TweetyToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TweetyToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F85E370F1E5B772A00D5CF98 /* TweetyToolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetyToolUITests.swift; sourceTree = "<group>"; };
+		F85E37111E5B772A00D5CF98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F85E36E91E5B772A00D5CF98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F85E36FD1E5B772A00D5CF98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F85E37081E5B772A00D5CF98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F85E36E31E5B772A00D5CF98 = {
+			isa = PBXGroup;
+			children = (
+				F85E36EE1E5B772A00D5CF98 /* TweetyTool */,
+				F85E37031E5B772A00D5CF98 /* TweetyToolTests */,
+				F85E370E1E5B772A00D5CF98 /* TweetyToolUITests */,
+				F85E36ED1E5B772A00D5CF98 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F85E36ED1E5B772A00D5CF98 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F85E36EC1E5B772A00D5CF98 /* TweetyTool.app */,
+				F85E37001E5B772A00D5CF98 /* TweetyToolTests.xctest */,
+				F85E370B1E5B772A00D5CF98 /* TweetyToolUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F85E36EE1E5B772A00D5CF98 /* TweetyTool */ = {
+			isa = PBXGroup;
+			children = (
+				F85E36EF1E5B772A00D5CF98 /* AppDelegate.swift */,
+				F85E36F11E5B772A00D5CF98 /* ViewController.swift */,
+				F85E36F31E5B772A00D5CF98 /* Main.storyboard */,
+				F85E36F61E5B772A00D5CF98 /* Assets.xcassets */,
+				F85E36F81E5B772A00D5CF98 /* LaunchScreen.storyboard */,
+				F85E36FB1E5B772A00D5CF98 /* Info.plist */,
+			);
+			path = TweetyTool;
+			sourceTree = "<group>";
+		};
+		F85E37031E5B772A00D5CF98 /* TweetyToolTests */ = {
+			isa = PBXGroup;
+			children = (
+				F85E37041E5B772A00D5CF98 /* TweetyToolTests.swift */,
+				F85E37061E5B772A00D5CF98 /* Info.plist */,
+			);
+			path = TweetyToolTests;
+			sourceTree = "<group>";
+		};
+		F85E370E1E5B772A00D5CF98 /* TweetyToolUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F85E370F1E5B772A00D5CF98 /* TweetyToolUITests.swift */,
+				F85E37111E5B772A00D5CF98 /* Info.plist */,
+			);
+			path = TweetyToolUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F85E36EB1E5B772A00D5CF98 /* TweetyTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F85E37141E5B772A00D5CF98 /* Build configuration list for PBXNativeTarget "TweetyTool" */;
+			buildPhases = (
+				F85E36E81E5B772A00D5CF98 /* Sources */,
+				F85E36E91E5B772A00D5CF98 /* Frameworks */,
+				F85E36EA1E5B772A00D5CF98 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TweetyTool;
+			productName = TweetyTool;
+			productReference = F85E36EC1E5B772A00D5CF98 /* TweetyTool.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F85E36FF1E5B772A00D5CF98 /* TweetyToolTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F85E37171E5B772A00D5CF98 /* Build configuration list for PBXNativeTarget "TweetyToolTests" */;
+			buildPhases = (
+				F85E36FC1E5B772A00D5CF98 /* Sources */,
+				F85E36FD1E5B772A00D5CF98 /* Frameworks */,
+				F85E36FE1E5B772A00D5CF98 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F85E37021E5B772A00D5CF98 /* PBXTargetDependency */,
+			);
+			name = TweetyToolTests;
+			productName = TweetyToolTests;
+			productReference = F85E37001E5B772A00D5CF98 /* TweetyToolTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F85E370A1E5B772A00D5CF98 /* TweetyToolUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F85E371A1E5B772A00D5CF98 /* Build configuration list for PBXNativeTarget "TweetyToolUITests" */;
+			buildPhases = (
+				F85E37071E5B772A00D5CF98 /* Sources */,
+				F85E37081E5B772A00D5CF98 /* Frameworks */,
+				F85E37091E5B772A00D5CF98 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F85E370D1E5B772A00D5CF98 /* PBXTargetDependency */,
+			);
+			name = TweetyToolUITests;
+			productName = TweetyToolUITests;
+			productReference = F85E370B1E5B772A00D5CF98 /* TweetyToolUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F85E36E41E5B772A00D5CF98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Vaidehi Duraphe";
+				TargetAttributes = {
+					F85E36EB1E5B772A00D5CF98 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					F85E36FF1E5B772A00D5CF98 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F85E36EB1E5B772A00D5CF98;
+					};
+					F85E370A1E5B772A00D5CF98 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F85E36EB1E5B772A00D5CF98;
+					};
+				};
+			};
+			buildConfigurationList = F85E36E71E5B772A00D5CF98 /* Build configuration list for PBXProject "TweetyTool" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F85E36E31E5B772A00D5CF98;
+			productRefGroup = F85E36ED1E5B772A00D5CF98 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F85E36EB1E5B772A00D5CF98 /* TweetyTool */,
+				F85E36FF1E5B772A00D5CF98 /* TweetyToolTests */,
+				F85E370A1E5B772A00D5CF98 /* TweetyToolUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F85E36EA1E5B772A00D5CF98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F85E36FA1E5B772A00D5CF98 /* LaunchScreen.storyboard in Resources */,
+				F85E36F71E5B772A00D5CF98 /* Assets.xcassets in Resources */,
+				F85E36F51E5B772A00D5CF98 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F85E36FE1E5B772A00D5CF98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F85E37091E5B772A00D5CF98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F85E36E81E5B772A00D5CF98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F85E36F21E5B772A00D5CF98 /* ViewController.swift in Sources */,
+				F85E36F01E5B772A00D5CF98 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F85E36FC1E5B772A00D5CF98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F85E37051E5B772A00D5CF98 /* TweetyToolTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F85E37071E5B772A00D5CF98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F85E37101E5B772A00D5CF98 /* TweetyToolUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F85E37021E5B772A00D5CF98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F85E36EB1E5B772A00D5CF98 /* TweetyTool */;
+			targetProxy = F85E37011E5B772A00D5CF98 /* PBXContainerItemProxy */;
+		};
+		F85E370D1E5B772A00D5CF98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F85E36EB1E5B772A00D5CF98 /* TweetyTool */;
+			targetProxy = F85E370C1E5B772A00D5CF98 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F85E36F31E5B772A00D5CF98 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F85E36F41E5B772A00D5CF98 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F85E36F81E5B772A00D5CF98 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F85E36F91E5B772A00D5CF98 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F85E37121E5B772A00D5CF98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F85E37131E5B772A00D5CF98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F85E37151E5B772A00D5CF98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TweetyTool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = codepath.TweetyTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F85E37161E5B772A00D5CF98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TweetyTool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = codepath.TweetyTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		F85E37181E5B772A00D5CF98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TweetyToolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = codepath.TweetyToolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TweetyTool.app/TweetyTool";
+			};
+			name = Debug;
+		};
+		F85E37191E5B772A00D5CF98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TweetyToolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = codepath.TweetyToolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TweetyTool.app/TweetyTool";
+			};
+			name = Release;
+		};
+		F85E371B1E5B772A00D5CF98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = TweetyToolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = codepath.TweetyToolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = TweetyTool;
+			};
+			name = Debug;
+		};
+		F85E371C1E5B772A00D5CF98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = TweetyToolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = codepath.TweetyToolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = TweetyTool;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F85E36E71E5B772A00D5CF98 /* Build configuration list for PBXProject "TweetyTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F85E37121E5B772A00D5CF98 /* Debug */,
+				F85E37131E5B772A00D5CF98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F85E37141E5B772A00D5CF98 /* Build configuration list for PBXNativeTarget "TweetyTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F85E37151E5B772A00D5CF98 /* Debug */,
+				F85E37161E5B772A00D5CF98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F85E37171E5B772A00D5CF98 /* Build configuration list for PBXNativeTarget "TweetyToolTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F85E37181E5B772A00D5CF98 /* Debug */,
+				F85E37191E5B772A00D5CF98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F85E371A1E5B772A00D5CF98 /* Build configuration list for PBXNativeTarget "TweetyToolUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F85E371B1E5B772A00D5CF98 /* Debug */,
+				F85E371C1E5B772A00D5CF98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F85E36E41E5B772A00D5CF98 /* Project object */;
+}
