@@ -1,0 +1,6 @@
+framework module Pods_TweetyToolUITests {
+  umbrella header "Pods-TweetyToolUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
