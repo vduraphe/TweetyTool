@@ -24,9 +24,9 @@ class TweetDetailsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        myImageLabel.setImageWith((tweet!.pers.profileUrl!))
+        myImageLabel.setImageWith((tweet!.pers.userImageURL))
         nameLabel.text = tweet!.pers.name
-        handleLabel.text = "@\(tweet!.pers.screenname!)"
+        handleLabel.text = "@\(tweet!.pers.screenname)"
         
         tweetText.text = tweet?.text as String?
         
@@ -102,7 +102,36 @@ class TweetDetailsViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     
+        if (segue.identifier == "ReplySegue") {
+            let indexPathRow = (sender as! UIButton).tag
+            let composeVC = segue.destination as! ComposePageViewController
+            composeVC.userReply = "@\(tweet.pers.screenname)"
+        } else if (segue.identifier == "ProfileSegue") {
+            let indexPathRow = (sender as! UIButton).tag
+            //let tweet = tweets[indexPathRow];
+            
+            let profileVC = segue.destination as! ProfileViewController
+            profileVC.user = tweet.pers
+            
+        }
+        
+        
+        /*
+         if (segue.identifier == "composePage")
+         {
+         let navVC = segue.destination as! UINavigationController
+         let vc = navVC.topViewController as! ComposePageViewController
+         vc.profileURL = User.currentUser?.profileUrl
+         vc.nameLabel.text = User.currentUser?.name
+         vc.handleLabel.text = User.currentUser?.screenname
+         }
+         */
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+        
+    }
 
     /*
     // MARK: - Navigation

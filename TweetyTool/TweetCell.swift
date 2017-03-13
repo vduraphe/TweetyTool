@@ -23,9 +23,10 @@ class TweetCell: UITableViewCell {
     
     var tweet: Tweet! {
         didSet {
-            myImageView.setImageWith(tweet.pers.profileUrl!)
+            myImageView.setImageWith(tweet.pers.userImageURL)
+            
             nameLabel.text = tweet.pers.name
-            handleLabel.text = "@\(tweet.pers.screenname!)"
+            handleLabel.text = "@\(tweet.pers.screenname)"
             
             tweetTextLabel.text = tweet.text as String?
             

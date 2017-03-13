@@ -9,33 +9,49 @@
 import UIKit
 
 class User: NSObject {
-    var name: String?
-    var screenname: String?
-    var profileUrl: URL?
-    var tagline: String?
-    var dictionary: NSDictionary?
-    var bannerUrl: URL?
-    var followerCount: Int?
-    var followingCount: Int?
+    var id: Int = 0
+    var name: String
+    var screenname: String
+    //var profileUrl: URL?
+    var tagline: String
+    
+    var dictionary: NSDictionary
+    var followerCount: Int = 0
+    var userImageURL: URL
+    var bannerImageURL: URL?
+    var followersString: String {
+        return countText(count: followerCount)
+    }
+    var tweetCount: Int = 0
+    var followingCount: Int = 0
+    var followingString: String {
+        return countText(count: followingCount)
+    }
+    var tweetsString: String {
+        return countText(count: tweetCount)
+    }
+
     
     init(dictionary: NSDictionary) {
         self.dictionary = dictionary
         
-        name = dictionary["name"] as? String
-        screenname = dictionary["screen_name"] as? String
+        id = dictionary["id"] as! Int
+        name = dictionary["name"] as! String
+        screenname = dictionary["screen_name"] as! String
+        userImageURL = URL(string: dictionary["profile_image_url_https"] as! String)!
+       bannerImageURL = URL(string: dictionary["profile_banner_url"] as? String ?? "")
+        tagline = dictionary["description"] as! String
+        followingCount = dictionary["friends_count"] as! Int
+        followerCount = dictionary["followers_count"] as! Int
+        tweetCount = dictionary["statuses_count"] as! Int
         
-        let profileUrlString = dictionary["profile_image_url_https"] as? String
-        if let profileUrlString = profileUrlString {
-            profileUrl = URL(string: profileUrlString)
-        }
-        let bannerImageString = dictionary["profile_background_image_url_https"] as? String
-        if bannerImageString != nil {
-            bannerUrl = URL(string: bannerImageString!)!
-        }
-        followerCount = dictionary["followers_count"] as? Int
-        followingCount = dictionary["friends_count"] as? Int
         
-        tagline = dictionary["description"] as? String
+        //name = dictionary["name"] as? String
+        //screenname = dictionary["screen_name"] as? String
+        //profileUrl = URL(string: dictionary["profile_image_url_https"] as! String)!
+       
+   
+ 
     }
     
     static let userDidLogoutNotification = "UserDidLogout"
@@ -58,12 +74,21 @@ class User: NSObject {
             
             let defaults = UserDefaults.standard
             if let user = user {
-                let data = try! JSONSerialization.data(withJSONObject: user.dictionary!, options: [])
+                let data = try! JSONSerialization.data(withJSONObject: user.dictionary, options: [])
                 defaults.set(data, forKey: "currentUserData")
             } else {
                 defaults.removeObject(forKey: "currentUserData")
             }
             defaults.synchronize()
+        }
+    }
+    func countText(count: Int) -> String {
+        if count >= 1000000 {
+            return "\(Double(count/100000).rounded()/10) M"
+        } else if count >= 1000 {
+            return "\(Double(count/100).rounded()/10) K"
+        } else {
+            return "\(count)"
         }
     }
     

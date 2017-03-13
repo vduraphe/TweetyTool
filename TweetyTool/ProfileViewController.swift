@@ -10,25 +10,57 @@ import UIKit
 
 class ProfileViewController: UIViewController {
 
-    var tweet: Tweet!
-    var user: User!
-    @IBOutlet weak var backgroundImageView: UIImageView!
     @IBOutlet weak var myProfileImageView: UIImageView!
+    @IBOutlet weak var followersCount: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var handleLabel: UILabel!
+    @IBOutlet weak var followingcount: UILabel!
+    @IBOutlet weak var retweetCount: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var backgroundImage: UIImageView!
+  
+    var user: User!
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+        
+        print(user)
+        print(user.userImageURL)
+        print(user.bannerImageURL)
+        if let bannerImageURL = user.bannerImageURL {
+            backgroundImage.setImageWith(bannerImageURL)
+        }
+        myProfileImageView.setImageWith((user.userImageURL))
+        nameLabel.text = user.name
+        handleLabel.text = user.screenname
+        descriptionLabel.text = user.tagline
+        retweetCount.text = user.tweetsString
+        followingcount.text = user.followingString
+        followersCount.text = user.followersString
 
+        /*
+        myProfileImageView.setImageWith(user.userImageURL!)
+        nameLabel.text = user.name
+        handleLabel.text = user.screenname
+        
+        
+        
+        followingcount.text = user.followingString
+        followersCount.text = user.followersString
+        retweetCount.text = user.tweetsString
+ */
         // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        nameLabel.text = tweet.pers.name
-        handleLabel.text = tweet.pers.screenname
-        myProfileImageView.setImageWith(tweet.pers.profileUrl!)
-        backgroundImageView.setImageWith(tweet.pers.bannerUrl!)
+        
         // Dispose of any resources that can be recreated.
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Compose segue
+        let composeVC = segue.destination as! ComposePageViewController
+        composeVC.userReply = "@\(user.screenname)"
     }
     
 

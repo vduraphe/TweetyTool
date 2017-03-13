@@ -10,11 +10,13 @@ import UIKit
 
 class TweetsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    let refreshControl: UIRefreshControl = UIRefreshControl()
     @IBOutlet weak var tableView: UITableView!
     var tweets: [Tweet]!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        refreshControl.addTarget(self, action: #selector(TweetsViewController.uiRefreshControlAction), for: UIControlEvents.valueChanged)
+        self.tableView.addSubview(refreshControl)
         tableView.delegate = self
         tableView.dataSource = self
         tableView.rowHeight = UITableViewAutomaticDimension
@@ -34,7 +36,11 @@ class TweetsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    func uiRefreshControlAction()
+    {
+        self.tableView.reloadData()
+        refreshControl.endRefreshing()
+    }
 
     @IBAction func onLogout(_ sender: AnyObject) {
         TwitterClient.sharedInstance?.logout()
@@ -67,7 +73,22 @@ class TweetsViewController: UIViewController, UITableViewDelegate, UITableViewDa
             let tweet = tweets![(indexPath?.row)!]
             let vc = segue.destination as! TweetDetailsViewController
             vc.tweet = tweet
+        } else if (segue.identifier == "ProfileSegue") {
+            let indexPathRow = (sender as! UIButton).tag
+            let tweet = tweets[indexPathRow];
+            
+            let profileVC = segue.destination as! ProfileViewController
+            profileVC.user = tweet.pers
+          
         }
+        else if (segue.identifier == "ReplySegue") {
+            let indexPathRow = (sender as! UIButton).tag
+            let tweet = tweets[indexPathRow];
+            
+            let composeVC = segue.destination as! ComposePageViewController
+            composeVC.userReply = String("@\(tweet.pers.screenname)")
+        }
+        
         
         /*
         if (segue.identifier == "composePage")
